@@ -1,4 +1,4 @@
-# BASE-05 AI Assistant と Analytics
+# BASE-05 AI Assistant と Analytics（SD-WAN Manager）
 
 - 時間: 10 分 / 前提: なし / 使う画面: ポータルの説明だけ（SD-WAN Manager は操作しない）
 

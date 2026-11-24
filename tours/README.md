@@ -9,9 +9,9 @@
 | [BASE-02](BASE-02.md) | オーバーレイの状態 | 10 分 | SD-WAN Manager |
 | [BASE-03](BASE-03.md) | 役割ごとのアクセス制御 | 10 分 | SD-WAN Manager |
 | [BASE-04](BASE-04.md) | NWPI による通信の可視化 | 15 分 | SD-WAN Manager |
-| [BASE-05](BASE-05.md) | AI Assistant と Analytics | 10 分 | ポータルの説明だけ |
+| [BASE-05](BASE-05.md) | AI Assistant と Analytics（SD-WAN Manager） | 10 分 | ポータルの説明だけ |
 | [SCC-01](SCC-01.md) | 組織と製品を 1 つの画面で見る | 5 分 | ポータルの画面のサンプル |
-| [SSE-03](SSE-03.md) | クライアントレス ZTNA で席に入る | 15 分 | ポータル、Duo、席の Windows |
+| [SSE-03](SSE-03.md) | クライアントレス ZTNA で拠点の端末に入る | 15 分 | ポータル、Duo、席の Windows |
 | [SSE-01](SSE-01.md) | SD-WAN から CSA への自動トンネル（SIA） | 15 分 | SD-WAN Manager、ポータルの説明 |
 | [SSE-02](SSE-02.md) | Web 閲覧のカテゴリ制御 | 15 分 | 席の Windows の Edge、ポータル |
 
