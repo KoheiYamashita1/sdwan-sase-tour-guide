@@ -11,7 +11,7 @@ SD-WAN Manager では、利用者をユーザーグループに入れ、グル�
 
 | 手順 | やること | 確認すること | 確認 |
 |---|---|---|---|
-| 1 ログイン | 配られた利用者で SD-WAN Manager にログインする | Dashboard が出る | 自己申告 |
+| 1 ログイン | ポータルのトップページの「SD-WAN Manager」の欄の利用者で SD-WAN Manager にログインする | Dashboard が出る | 自己申告 |
 | 2 ユーザーグループ | 説明を読む（既定のグループ netadmin、operator など） | — | クイズ（見るだけの利用者のグループ） |
 | 3 Read と Write | 説明を読む | — | クイズ（Write を付けたときの Read） |
 | 4 見られること | **Monitor** > **Devices** で 3 台を見る。**Configuration Groups** で `SHOW-AWS` を開き、Feature Profile の中身を見る | 状態も設定も見られる | 自己申告 |
