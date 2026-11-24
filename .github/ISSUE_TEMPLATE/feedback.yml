@@ -1,0 +1,84 @@
+name: 体験ツアーの感想
+description: SD-WAN / SASE 体験ツアーの感想と改善の案を送る（体験ポータルのアンケートと同じ 5 問）
+title: "[感想] "
+labels: ["feedback:untriaged", "from:github"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        体験ツアーに参加いただき、ありがとうございます。この Issue は**公開されます**。
+        会社名、お名前、メールアドレス、パスワード、社内の URL など、あなたや組織が分かることは書かないでください。
+        体験ポータルのアンケートに答えた方は、こちらに同じことを書く必要はありません。
+  - type: dropdown
+    id: satisfaction
+    attributes:
+      label: 1. 全体の満足度
+      options:
+        - 5（とても満足）
+        - "4"
+        - "3"
+        - "2"
+        - 1（不満）
+    validations:
+      required: true
+  - type: dropdown
+    id: best_tour
+    attributes:
+      label: 2. 一番役に立ったツアー
+      options:
+        - BASE-01 UX 2.0 の全体像
+        - BASE-02 オーバーレイの状態
+        - BASE-03 役割ごとのアクセス制御
+        - BASE-04 NWPI による通信の可視化
+        - BASE-05 AI Assistant と Analytics
+        - SCC-01 組織と製品を 1 つの画面で見る
+        - SSE-01 SD-WAN から CSA への自動トンネル（SIA）
+        - SSE-02 Web 閲覧のカテゴリ制御
+        - SSE-03 クライアントレス ZTNA
+    validations:
+      required: true
+  - type: dropdown
+    id: intent
+    attributes:
+      label: 3. 自社で検討や PoC をしたいですか
+      options:
+        - したい
+        - 情報を集めたい
+        - 今はしない
+    validations:
+      required: true
+  - type: dropdown
+    id: stuck_tour
+    attributes:
+      label: 4. 分かりにくかった所、詰まった所があったツアー（任意）
+      options:
+        - BASE-01 UX 2.0 の全体像
+        - BASE-02 オーバーレイの状態
+        - BASE-03 役割ごとのアクセス制御
+        - BASE-04 NWPI による通信の可視化
+        - BASE-05 AI Assistant と Analytics
+        - SCC-01 組織と製品を 1 つの画面で見る
+        - SSE-01 SD-WAN から CSA への自動トンネル（SIA）
+        - SSE-02 Web 閲覧のカテゴリ制御
+        - SSE-03 クライアントレス ZTNA
+    validations:
+      required: false
+  - type: textarea
+    id: stuck_text
+    attributes:
+      label: 4. どの手順で、何が分かりにくかったか（任意）
+    validations:
+      required: false
+  - type: textarea
+    id: wish_text
+    attributes:
+      label: 5. 足してほしい内容、改善の案（任意）
+    validations:
+      required: false
+  - type: checkboxes
+    id: public
+    attributes:
+      label: 公開の確認
+      options:
+        - label: この Issue が公開されることを理解し、会社名、お名前、メールアドレス、パスワードなどを書いていません
+          required: true
