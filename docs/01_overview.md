@@ -11,13 +11,13 @@ Cisco の製品をつないだ実機のショーケースを、体験ポータ�
 | Security Cloud Control（SCC） | セキュリティ製品を組織ごとにまとめて見る管理画面 | 入らない。ツアーの画面のサンプルで見る |
 | Cisco Cloud Control（CCC） | シスコの製品をまとめ、AI Assistant や Inventory で製品をまたいで見る画面。SCC の組織がつながっている | 入らない。ツアーの画面のサンプルで見る |
 
-ツアーは全部で 10 本です。
+ツアーは全部で 11 本です。
 
 | 区分 | ツアー | 主に見るもの |
 |---|---|---|
 | SD-WAN の基本 | BASE-01〜05 | 設定の組み立て、オーバーレイの状態、権限、通信の可視化、AI Assistant と Analytics |
 | SCC | SCC-01 | 組織と製品を 1 つの画面で見る |
-| SSE（Secure Access） | SSE-01〜03 | SD-WAN から CSA への自動トンネル、ZTNA で席に入る、Web のカテゴリ制御 |
+| SSE（Secure Access） | SSE-01〜03、SSE-06 | SD-WAN から CSA への自動トンネル、ZTNA で席に入る、Web のカテゴリ制御、SD-WAN の VRF（VPN ID）でポリシーを分ける |
 | CCC | CCC-01 | ここまでのツアーの結果と運用の状況を、AI に聞いて確かめる |
 
 ## 体験ポータルとツアーの仕組み

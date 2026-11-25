@@ -44,9 +44,9 @@ flowchart LR
 | VPN | 番号 | 用途 |
 |---|---|---|
 | INFRA | 1 | 基盤（管理） |
-| CORP | 10 | 社員。AWS の拠点で LAN に出しているのはこれだけ |
+| CORP | 10 | 社員。AWS の 3 拠点の LAN に出している |
 | IOT | 20 | IoT 機器 |
-| GUEST | 30 | ゲスト |
+| GUEST | 30 | ゲスト。AWS の拠点では site-172 だけ LAN（10.172.30.0/24）に GUEST の席を置き、CSA に送っている（SSE-06） |
 
 LAN のアドレスは `10.<site-id>.<VPN 番号>.0/24` で決めています。
 
@@ -57,8 +57,11 @@ LAN のアドレスは `10.<site-id>.<VPN 番号>.0/24` で決めています。
 | seat-172-1 | 10.172.10.101 | site-172 の CORP |
 | seat-172-2 | 10.172.10.102 | site-172 の CORP |
 | seat-172-3 | 10.172.10.103 | site-172 の CORP |
+| seat-172-1-guest | 10.172.30.101 | site-172 の GUEST |
+| seat-172-2-guest | 10.172.30.102 | site-172 の GUEST |
+| seat-172-3-guest | 10.172.30.103 | site-172 の GUEST |
 
-- 席は Windows で、ポータルが体験者に 1 人 1 つ割り当てます
+- 席は Windows で、ポータルが体験者に 1 人 1 つ割り当てます。GUEST の席は CORP の席と組で、SSE-06 で使います（Duo の利用者は CORP の席と同じ）
 - 体験者は CSA のクライアントレス ZTNA を使い、手元のブラウザから RDP で席に入ります。ログインは Duo（席ごとの共有の利用者）と、席の Windows の利用者 `visitor` の 2 回です
 - 席のインターネット向けの通信は、C8KV-172 から CSA への IPsec のトンネル（SIA）を通り、CSA の Web のルールで検査されます
 
@@ -68,4 +71,5 @@ LAN のアドレスは `10.<site-id>.<VPN 番号>.0/24` で決めています。
 |---|---|---|
 | 拠点どうし（例: site-171 の端末から site-172 の席） | SD-WAN のトンネル（BFD で品質を測る） | BASE-02、BASE-04 |
 | site-172 の CORP からインターネット | C8KV-172 から CSA への SIA のトンネル。トンネルが使えないときは拠点から直接（NAT） | SSE-01、SSE-02、BASE-04 |
+| site-172 の GUEST からインターネット | CORP と同じ SIA のトンネル。ルータが VPN 30 の番号を付けて CSA に渡す | SSE-06 |
 | 手元のブラウザから席の RDP | CSA の ZTNA。Resource Connector が中継し、SD-WAN のルータは通らない | SSE-03 |

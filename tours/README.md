@@ -14,6 +14,7 @@
 | [SSE-03](SSE-03.md) | クライアントレス ZTNA で拠点の端末に入る | 15 分 | ポータル、Duo、席の Windows |
 | [SSE-01](SSE-01.md) | SD-WAN から CSA への自動トンネル（SIA） | 15 分 | SD-WAN Manager、ポータルの説明 |
 | [SSE-02](SSE-02.md) | Web 閲覧のカテゴリ制御 | 15 分 | 席の Windows の Edge、ポータル |
+| [SSE-06](SSE-06.md) | VRF（VPN ID）で CSA の Web のポリシーを分ける | 20 分 | CORP と GUEST の席の Edge、ポータル |
 | [CCC-01](CCC-01.md) | Cisco Cloud Control の AI でツアーの結果と運用の状況を確かめる | 20 分 | ポータルの画面のサンプル |
 
 各ファイルの表の「確認」の列は、ポータルでの確認の種類です（自己申告 / クイズ / live）。

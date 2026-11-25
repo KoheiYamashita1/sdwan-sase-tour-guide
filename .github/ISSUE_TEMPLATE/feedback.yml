@@ -35,6 +35,8 @@ body:
         - SSE-01 SD-WAN から CSA への自動トンネル（SIA）
         - SSE-02 Web 閲覧のカテゴリ制御
         - SSE-03 クライアントレス ZTNA
+        - SSE-06 VRF（VPN ID）で CSA のポリシーを分ける
+        - CCC-01 Cisco Cloud Control の AI で確かめる
     validations:
       required: true
   - type: dropdown
@@ -61,6 +63,8 @@ body:
         - SSE-01 SD-WAN から CSA への自動トンネル（SIA）
         - SSE-02 Web 閲覧のカテゴリ制御
         - SSE-03 クライアントレス ZTNA
+        - SSE-06 VRF（VPN ID）で CSA のポリシーを分ける
+        - CCC-01 Cisco Cloud Control の AI で確かめる
     validations:
       required: false
   - type: textarea
